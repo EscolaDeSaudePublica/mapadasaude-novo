@@ -29,21 +29,23 @@ services:
       - ./docker-data/public-files:/var/www/html/files
       - ./docker-data/private-files:/var/www/private-files
       - ./docker-data/saas-files:/var/www/SaaS
+      
+      - ./themes/Saude:/var/www/html/protected/application/themes/Saude
+
     links:
       - db
       - redis
+
     environment:
-      - ACTIVE_THEME=SampleTheme
+      - ACTIVE_THEME=Saude
 
       - LOG_LEVEL=DEBUG
       - LOG_ENABLED=true
       
-      - APP_MODE=production
-      - APP_LCODE=pt_BR
-#      - APP_LCODE=pt_BR,es_ES # para selecao do idioma baseado no navegador
+      - APP_MODE=development
       
-      - REDIS_CACHE=redis
-      - SESSIONS_SAVE_PATH=tcp://redis:6379
+      - REDIS_CACHE=redis-cache
+      # - SESSIONS_SAVE_PATH=tcp://redis-sessions:6379
       - PENDING_PCACHE_RECREATION_INTERVAL=5
 
       - POSTGRES_PASSWORD=mapas
@@ -53,11 +55,15 @@ services:
       - db
       - redis
 
-  redis:
+  redis-cache:
+    image: redis:5
+    command: --maxmemory 256Mb --maxmemory-policy allkeys-lru    
+
+  # @TODO persistir os dados para não apagar as sessões
+  redis-sessions:
     image: redis:5
     command: --maxmemory 256Mb --maxmemory-policy allkeys-lru
-    
-      
+
   db:
     image: mdillon/postgis:11
     restart: always

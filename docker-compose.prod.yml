@@ -17,7 +17,7 @@ services:
 
   mapasculturais:
     env_file:
-      - mapasculturais.prod.env
+      - .env_prod
     build:
       context: ./
       dockerfile: compose/production/Dockerfile
@@ -69,5 +69,5 @@ services:
 #    ports:
 #      - "5432:5432"
     volumes:
-      - ./compose/local/dump.sql:/docker-entrypoint-initdb.d/dump.sql
+      - ./compose/production/dump.sql:/docker-entrypoint-initdb.d/dump.sql
       - ./docker-data/db-data:/var/lib/postgresql/data

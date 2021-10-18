@@ -1,0 +1,3 @@
+[submodule "themes/Saude"]
+	path = themes/Saude
+	url = https://github.com/EscolaDeSaudePublica/saude

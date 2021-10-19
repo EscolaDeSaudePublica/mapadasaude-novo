@@ -2,3 +2,4 @@ docker-data
 node_modules
 vendor
 compose/production/dump.sql
+.env_prod

@@ -29,12 +29,13 @@ services:
       - ./docker-data/public-files:/var/www/html/files
       - ./docker-data/private-files:/var/www/private-files
       - ./docker-data/saas-files:/var/www/SaaS
+      - ./compose/production/php.ini:/usr/local/etc/php/php.ini
       
       - ./themes/Saude:/var/www/html/protected/application/themes/Saude
 
     links:
       - db
-      - redis
+      - redis-cache
 
     environment:
       - ACTIVE_THEME=Saude
@@ -53,8 +54,8 @@ services:
       - POSTGRES_DB=mapas
     depends_on:
       - db
-      - redis
-
+      - redis-cache
+      
   redis-cache:
     image: redis:5
     command: --maxmemory 256Mb --maxmemory-policy allkeys-lru    
@@ -72,8 +73,8 @@ services:
       - POSTGRES_USER=mapas
       - POSTGRES_DB=mapas
       - POSTGRES_DB_TEST=mapasculturais_test
-#    ports:
-#      - "5432:5432"
+    ports:
+      - "5432:5432"
     volumes:
       - ./compose/production/dump.sql:/docker-entrypoint-initdb.d/dump.sql
       - ./docker-data/db-data:/var/lib/postgresql/data

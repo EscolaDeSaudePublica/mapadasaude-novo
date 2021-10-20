@@ -58,11 +58,13 @@ services:
       
   redis-cache:
     image: redis:5
+    restart: always
     command: --maxmemory 256Mb --maxmemory-policy allkeys-lru    
 
   # @TODO persistir os dados para não apagar as sessões
   redis-sessions:
     image: redis:5
+    restart: always
     command: --maxmemory 256Mb --maxmemory-policy allkeys-lru
 
   db:

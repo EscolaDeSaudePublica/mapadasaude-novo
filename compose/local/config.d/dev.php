@@ -30,5 +30,6 @@ return [
 
 
     // AUTH -------------------
-    'auth.provider' => 'Fake'
+    'auth.provider' => 'Fake',
+    // 'auth.provider' => 'OpauthKeyCloak'
 ];

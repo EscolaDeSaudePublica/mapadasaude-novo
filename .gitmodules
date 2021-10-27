@@ -1,3 +1,6 @@
 [submodule "themes/Saude"]
 	path = themes/Saude
 	url = https://github.com/EscolaDeSaudePublica/saude
+[submodule "plugins/LocationStateCity"]
+	path = plugins/LocationStateCity
+	url = https://github.com/EscolaDeSaudePublica/plugin-LocationStateCity.git

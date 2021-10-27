@@ -30,8 +30,11 @@ services:
       - ./docker-data/private-files:/var/www/private-files
       - ./docker-data/saas-files:/var/www/SaaS
       - ./compose/production/php.ini:/usr/local/etc/php/php.ini
+
+      - ./compose/common/config.d:/var/www/html/protected/application/conf/conf-common.d
       
       - ./themes/Saude:/var/www/html/protected/application/themes/Saude
+      - ./plugins/LocationStateCity:/var/www/html/protected/application/plugins/LocationStateCity
 
     links:
       - db

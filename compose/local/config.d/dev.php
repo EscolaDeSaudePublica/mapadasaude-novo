@@ -3,6 +3,7 @@
 return [
     'doctrine.isDev' => false,
 
+    'app.useAssetsUrlCache'          => false,
 
     // LOG --------------------
     'slim.log.level'        => \Slim\Log::DEBUG,
@@ -10,7 +11,7 @@ return [
 
     // app.log.hook aceita regex para filtrar quais hooks são exibidos no output, 
     // ex: "panel", "^template", "template\(site\.index\.*\):before"
-    'app.log.hook'          => false, 
+    'app.log.hook'             => false, 
     // 'app.log.query'         => true,
     // 'app.log.requestData'   => true,
     // 'app.log.translations'  => true,

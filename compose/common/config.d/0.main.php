@@ -5,7 +5,8 @@ return [
     'app.siteName' => env('SITE_NAME', i::__('Mapas da Saúde')),
     'app.siteDescription' => env('SITE_DESCRIPTION', i::__('Mapa da Saúde.')),
     
-    'themes.active' => env('ACTIVE_THEME', 'MapasCulturais\Themes\BaseV1'),
+    // 'themes.active' => 'MapasCulturais\Themes\BaseV1',
+    'themes.active' => 'Saude',
 
     'app.lcode' => env('APP_LCODE', 'pt_BR,es_ES'),
 

@@ -18,7 +18,7 @@ services:
       - ../themes/Saude:/var/www/html/protected/application/themes/Saude
 
     environment:
-      - ACTIVE_THEME=Saude
+      
       - APP_MODE=development
       - REDIS_CACHE=redis
 

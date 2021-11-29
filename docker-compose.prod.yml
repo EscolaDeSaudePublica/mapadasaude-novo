@@ -41,8 +41,6 @@ services:
       - redis-cache
 
     environment:
-      - ACTIVE_THEME=Saude
-
       - LOG_LEVEL=DEBUG
       - LOG_ENABLED=true
       

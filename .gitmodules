@@ -4,3 +4,15 @@
 [submodule "plugins/LocationStateCity"]
 	path = plugins/LocationStateCity
 	url = https://github.com/EscolaDeSaudePublica/plugin-LocationStateCity.git
+[submodule "plugins/EvaluationMethodHomolog"]
+	path = plugins/EvaluationMethodHomolog
+	url = https://github.com/EscolaDeSaudePublica/plugin-EvaluationMethodHomolog
+[submodule "plugins/EvaluationMethodTechnicalNa"]
+	path = plugins/EvaluationMethodTechnicalNa
+	url = https://github.com/EscolaDeSaudePublica/plugin-EvaluationMethodTechnicalNa
+[submodule "plugins/PDFReport"]
+	path = plugins/PDFReport
+	url = https://github.com/EscolaDeSaudePublica/plugin-PDFReport
+[submodule "plugins/SealCertified"]
+	path = plugins/SealCertified
+	url = https://github.com/EscolaDeSaudePublica/plugin-SealCertified

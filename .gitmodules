@@ -16,3 +16,6 @@
 [submodule "plugins/SealCertified"]
 	path = plugins/SealCertified
 	url = https://github.com/EscolaDeSaudePublica/plugin-SealCertified
+[submodule "plugins/EditRegistration"]
+	path = plugins/EditRegistration
+	url = https://github.com/EscolaDeSaudePublica/plugin-EditarInscricao.git

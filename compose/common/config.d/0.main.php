@@ -23,5 +23,7 @@ return [
         'password'       => env('DB_PASS', 'mapas'),
         'server_version' => env('DB_VERSION', 10),
     ],
-    'app.enabled.events' => false
+    'app.enabled.events' => false,
+    'app.enabled.subsite' => false,
+    'app.enabled.apps' => false
 ];

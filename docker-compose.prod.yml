@@ -17,7 +17,7 @@ services:
 
   mapasculturais:
     env_file:
-      - .env_prod
+      - .env_local
     build:
       context: ./
       dockerfile: compose/production/Dockerfile
@@ -31,11 +31,28 @@ services:
       - ./docker-data/saas-files:/var/www/SaaS
       - ./compose/production/php.ini:/usr/local/etc/php/php.ini
 
-      - ./compose/common/config.d:/var/www/html/protected/application/conf/conf-common.d
-      
-      - ./themes/Saude:/var/www/html/protected/application/themes/Saude
-      - ./plugins/LocationStateCity:/var/www/html/protected/application/plugins/LocationStateCity
+      - ../mapadasaude/src/protected/db-updates.php:/var/www/html/protected/db-updates.php
+      - ../mapadasaude/src/protected/application/lib:/var/www/html/protected/application/lib
+      - ../mapadasaude/src/protected/application/conf/conf-base.d/:/var/www/html/protected/application/conf/conf-base.d/
+      - ../mapadasaude/src/protected/application/themes:/var/www/html/protected/application/themes
+      - ../mapadasaude/src/protected/application/plugins/EvaluationMethodTechnical:/var/www/html/protected/application/plugins/EvaluationMethodTechnical
+      - ../mapadasaude/src/protected/application/plugins/EvaluationMethodDocumentary:/var/www/html/protected/application/plugins/EvaluationMethodDocumentary
+      - ../mapadasaude/src/protected/application/plugins/EvaluationMethodSimple:/var/www/html/protected/application/plugins/EvaluationMethodSimple
+      - ../mapadasaude/src/protected/application/plugins/SealModelTab:/var/www/html/protected/application/plugins/SealModelTab
+      - ../mapadasaude/src/protected/vendor:/var/www/html/protected/vendor
+      - ../mapadasaude/src/protected/composer.json:/var/www/html/protected/composer.json
+      - ../mapadasaude/src/protected/composer.lock:/var/www/html/protected/composer.lock
 
+      - ./compose/common/config.php:/var/www/html/protected/application/conf/config.php
+      - ./compose/common/config.d:/var/www/html/protected/application/conf/conf-common.d
+      - ./compose/production/config.d:/var/www/html/protected/application/conf/config.d
+
+      - ./themes/Saude:/var/www/html/protected/application/themes/Saude
+      - ./plugins/EvaluationMethodHomolog:/var/www/html/protected/application/plugins/EvaluationMethodHomolog
+      - ./plugins/EvaluationMethodTechnicalNa:/var/www/html/protected/application/plugins/EvaluationMethodTechnicalNa
+      - ./plugins/SealCertified:/var/www/html/protected/application/plugins/SealCertified
+      - ./plugins/PDFReport:/var/www/html/protected/application/plugins/PDFReport
+      - ./plugins/EditRegistration:/var/www/html/protected/application/plugins/EditRegistration
     links:
       - db
       - redis-cache

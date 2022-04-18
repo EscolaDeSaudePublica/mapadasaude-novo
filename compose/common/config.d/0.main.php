@@ -2,7 +2,7 @@
 use MapasCulturais\i;
 
 return [
-    'app.siteName' => env('SITE_NAME', i::__('Mapas da Saúde')),
+    'app.siteName' => env('SITE_NAME', i::__('Mapa da Saúde')),
     'app.siteDescription' => env('SITE_DESCRIPTION', i::__('Mapa da Saúde.')),
     
     // 'themes.active' => 'MapasCulturais\Themes\BaseV1',

@@ -19,3 +19,6 @@
 [submodule "plugins/EditRegistration"]
 	path = plugins/EditRegistration
 	url = https://github.com/EscolaDeSaudePublica/plugin-EditarInscricao.git
+[submodule "core"]
+	path = core
+	url = https://github.com/EscolaDeSaudePublica/mapadasaude.git

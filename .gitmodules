@@ -22,3 +22,6 @@
 [submodule "core"]
 	path = core
 	url = https://github.com/EscolaDeSaudePublica/mapadasaude.git
+[submodule "arquitetura"]
+	path = arquitetura
+	url = https://github.com/EscolaDeSaudePublica/mapadasaude-arquitetura.git

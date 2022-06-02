@@ -7,5 +7,5 @@ if(substr($host_part,-1) !== '/') $host_part .= '/';
 $_APP_BASE_URL = $prot_part . $host_part;
 
 return [
-    'auth.provider' => 'OpauthKeyCloak'
+    'auth.provider' => 'Fake'
 ];

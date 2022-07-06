@@ -25,3 +25,6 @@
 [submodule "arquitetura"]
 	path = arquitetura
 	url = https://github.com/EscolaDeSaudePublica/mapadasaude-arquitetura.git
+[submodule "plugins/CNESIntegration"]
+	path = plugins/CNESIntegration
+	url = https://github.com/EscolaDeSaudePublica/CNESIntegration.git

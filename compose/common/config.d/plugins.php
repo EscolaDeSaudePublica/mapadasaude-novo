@@ -20,6 +20,6 @@ return [
             ] 
         ],
         'EditRegistration' => ['namespace' => 'EditRegistration'],
-
+        'CNESIntegration' => ['namespace' => 'CNESIntegration'],
     ]
 ];

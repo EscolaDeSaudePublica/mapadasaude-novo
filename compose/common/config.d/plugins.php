@@ -20,6 +20,7 @@ return [
             ] 
         ],
         'EditRegistration' => ['namespace' => 'EditRegistration'],
+        'SaguIntegration' => ['namespace' => 'SaguIntegration'],
 
     ]
 ];

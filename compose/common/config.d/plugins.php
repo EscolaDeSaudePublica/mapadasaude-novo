@@ -21,5 +21,7 @@ return [
         ],
         'EditRegistration' => ['namespace' => 'EditRegistration'],
         'CNESIntegration' => ['namespace' => 'CNESIntegration'],
+        'SaguIntegration' => ['namespace' => 'SaguIntegration'],
+
     ]
 ];

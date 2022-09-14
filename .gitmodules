@@ -19,6 +19,9 @@
 [submodule "plugins/EditRegistration"]
 	path = plugins/EditRegistration
 	url = https://github.com/EscolaDeSaudePublica/plugin-EditarInscricao.git
+[submodule "plugins/SaguIntegration"]
+	path = plugins/SaguIntegration
+	url = https://github.com/EscolaDeSaudePublica/plugin-SaguIntegration
 [submodule "core"]
 	path = core
 	url = https://github.com/EscolaDeSaudePublica/mapadasaude.git

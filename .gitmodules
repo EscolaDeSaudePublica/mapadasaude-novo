@@ -22,9 +22,13 @@
 [submodule "plugins/SaguIntegration"]
 	path = plugins/SaguIntegration
 	url = https://github.com/EscolaDeSaudePublica/plugin-SaguIntegration
+[submodule "plugins/CNESIntegration"]
+	path = plugins/CNESIntegration
+	url = https://github.com/EscolaDeSaudePublica/plugin-CNESIntegration
 [submodule "core"]
 	path = core
 	url = https://github.com/EscolaDeSaudePublica/mapadasaude.git
 [submodule "arquitetura"]
 	path = arquitetura
 	url = https://github.com/EscolaDeSaudePublica/mapadasaude-arquitetura.git
+

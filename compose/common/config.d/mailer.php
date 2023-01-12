@@ -59,6 +59,10 @@ return [
         'registration_confirm_custom' => [
             'title' => i::__("Confirmação de inscrição"),
             'template' => 'registration_confirm_custom.html'
+        ],
+        'send_mail_registration_evaluation' => [
+            'title' => i::__("MAPA DA SAÚDE - ALERTA DE DOCUMENTAÇÃO INVÁLIDA."),
+            'template' => 'send_mail_registration_evaluation.html'
         ]
     ]
 

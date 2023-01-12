@@ -1,34 +1,34 @@
 [submodule "themes/Saude"]
 	path = themes/Saude
-	url = https://github.com/EscolaDeSaudePublica/saude
+	url = https://github.com/Felicilab/saude
 [submodule "plugins/LocationStateCity"]
 	path = plugins/LocationStateCity
-	url = https://github.com/EscolaDeSaudePublica/plugin-LocationStateCity.git
+	url = https://github.com/Felicilab/plugin-LocationStateCity.git
 [submodule "plugins/EvaluationMethodHomolog"]
 	path = plugins/EvaluationMethodHomolog
-	url = https://github.com/EscolaDeSaudePublica/plugin-EvaluationMethodHomolog
+	url = https://github.com/Felicilab/plugin-EvaluationMethodHomolog
 [submodule "plugins/EvaluationMethodTechnicalNa"]
 	path = plugins/EvaluationMethodTechnicalNa
-	url = https://github.com/EscolaDeSaudePublica/plugin-EvaluationMethodTechnicalNa
+	url = https://github.com/Felicilab/plugin-EvaluationMethodTechnicalNa
 [submodule "plugins/PDFReport"]
 	path = plugins/PDFReport
-	url = https://github.com/EscolaDeSaudePublica/plugin-PDFReport
+	url = https://github.com/Felicilab/plugin-PDFReport
 [submodule "plugins/SealCertified"]
 	path = plugins/SealCertified
-	url = https://github.com/EscolaDeSaudePublica/plugin-SealCertified
+	url = https://github.com/Felicilab/plugin-SealCertified
 [submodule "plugins/EditRegistration"]
 	path = plugins/EditRegistration
-	url = https://github.com/EscolaDeSaudePublica/plugin-EditarInscricao.git
+	url = https://github.com/Felicilab/plugin-EditarInscricao.git
 [submodule "plugins/SaguIntegration"]
 	path = plugins/SaguIntegration
-	url = https://github.com/EscolaDeSaudePublica/plugin-SaguIntegration
+	url = https://github.com/Felicilab/plugin-SaguIntegration
 [submodule "plugins/CNESIntegration"]
 	path = plugins/CNESIntegration
-	url = https://github.com/EscolaDeSaudePublica/plugin-CNESIntegration
+	url = https://github.com/Felicilab/plugin-CNESIntegration
 [submodule "core"]
 	path = core
-	url = https://github.com/EscolaDeSaudePublica/mapadasaude.git
+	url = https://github.com/Felicilab/mapadasaude.git
 [submodule "arquitetura"]
 	path = arquitetura
-	url = https://github.com/EscolaDeSaudePublica/mapadasaude-arquitetura.git
+	url = https://github.com/Felicilab/mapadasaude-arquitetura.git
 
